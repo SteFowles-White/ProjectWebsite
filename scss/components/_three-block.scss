@@ -1,0 +1,10 @@
+.c-three__block__container {
+    height: 300px;
+    border-radius: 1rem;
+} 
+
+@media only screen and (max-width: 768px) {
+    .c-three__block__container {
+        height: 220px;
+    } 
+  }
