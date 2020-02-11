@@ -65,10 +65,40 @@ h6 {
   font-size: .875rem;
   line-height: 1.3125rem; }
 
-.c-three__block__container {
-  height: 300px;
-  border-radius: 1rem; }
+@media only screen and (max-width: 768px) {
+  .card-deck {
+    display: block !important; } }
+
+.c-header {
+  background-image: url("https://source.unsplash.com/random/1920x750");
+  padding-top: 35%;
+  background-repeat: no-repeat, repeat;
+  background-position: top;
+  background-size: contain;
+  background-attachment: fixed; }
+
+.c-header-heading {
+  width: 35%;
+  position: absolute;
+  top: 10vw;
+  color: white;
+  left: 10vw;
+  font-size: 3rem; }
+  .c-header-heading h1 {
+    font-size: 3rem; }
+
+@media only screen and (max-width: 1200px) {
+  .c-header-heading {
+    width: 50%;
+    top: 5vw; }
+    .c-header-heading h1 {
+      font-size: 2.5rem; } }
 
 @media only screen and (max-width: 768px) {
-  .c-three__block__container {
-    height: 220px; } }
+  .c-header-heading {
+    width: 100%;
+    position: static;
+    background-color: black; }
+  .c-header {
+    background-image: url("https://source.unsplash.com/random/750x700");
+    padding-top: 85%; } }
