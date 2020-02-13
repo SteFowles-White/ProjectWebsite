@@ -15,24 +15,34 @@
 
   </head>
   <body>
-    <nav class="container-fluid pl-0 pr-0">
-      <p>Navigation</p>
-    </nav>
+    <header aria-label="header section of the website" role="navigation" aria-label="Navigation Menu">
+      <nav class="c-nav container-fluid navbar navbar-expand-sm navbar-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#" aria-controls="nav-home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#" aria-controls="nav-home">Features</a>
+            <a class="nav-item nav-link" href="#" aria-controls="nav-home">Pricing</a>
+          </div>
+        </div>
+      </nav>
 
-    <!-- Header -->
-
-    <header class="container-fluid pl-0 pr-0">
-      <div class="row m-0">
-        <section class="col-12 pl-0 pr-0 d-flex">
-          <header class="d-flex c-header-heading">
-            <h1 class="">Creating Responsive, Accessable Web Designs</h1>
-          </header>
-          <picture class="c-header">
-            <source srcset="images/background-mobile.jpg"  media="(max-width: 576px)">
-            <img class="c-header-image" src="images/background.jpg" alt="Open reatch arm">
-          </picture>
-        </section>
-      </div>
+      <section class="container-fluid pl-0 pr-0" aria-label="Opening banner">
+        <div class="row m-0">
+          <section class="col-12 pl-0 pr-0 d-flex">
+            <header class="d-flex c-header-heading">
+              <h1 class="">Creating Responsive, Accessable Web Designs</h1>
+            </header>
+            <picture class="c-header">
+              <source srcset="images/background-mobile.jpg"  media="(max-width: 576px)">
+              <img class="c-header-image" src="images/background.jpg" alt="Open reatch arm">
+            </picture>
+          </section>
+        </div>
+      </section>
     </header>
 
 

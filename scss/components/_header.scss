@@ -7,12 +7,13 @@
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(254, 252, 253, 1));
     h1 {
         position: absolute;
-        width: 35%;
+        width: 40%;
         left: 8%;
         z-index: 100;
         opacity: 0;
-        font-size: 5rem;
-        line-height: 6rem;
+        transition: font-size .5s, line-height .5s;
+        font-size: 4rem;
+        line-height: 5rem;
         animation-name: fade-in;
         animation-delay: 2s;
         animation-duration: 3s;
@@ -21,6 +22,7 @@
 }
 .c-header-image {
     width: 100%;
+    opacity: .7;
     height: auto;
     animation-name: fade-in;
     animation-duration: 3s;
@@ -28,24 +30,27 @@
 
 @media only screen and (max-width: 1200px) {
     .c-header-heading h1 {
-            font-size: 3.5rem;
-            line-height: 4rem;
+            font-size: 3rem;
+            line-height: 3.6rem;
         }
   }
 @media only screen and (max-width: 992px) {
     .c-header-heading h1 {
+            width: 45%;
             font-size: 2.5rem;
             line-height: 3rem;
         }
   }
+@media only screen and (max-width: 768px) {
+    .c-header-heading h1 {
+            width: 45%;
+            font-size: 1.8rem;
+            line-height: 2.3rem;
+        }
+  }
 @media only screen and (max-width: 576px) {
     .c-header-heading h1 {
-        font-size: 1.5rem;
-        line-height: 1.8rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
     }
-  }
-
-  @keyframes fade-in {
-    from {opacity: 0;}
-    to {opacity: 1;}
   }
