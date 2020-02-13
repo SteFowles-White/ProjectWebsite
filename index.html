@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
     <title>Hello, world!</title>
 
@@ -21,10 +23,14 @@
 
     <header class="container-fluid pl-0 pr-0">
       <div class="row m-0">
-        <section class="col-12 c-header pl-0 pr-0">
-          <div class="c-header-heading">
-            <h1>Creating Responsive, Accessable Web Designs</h1>
-          </div>
+        <section class="col-12 pl-0 pr-0 d-flex">
+          <header class="d-flex c-header-heading">
+            <h1 class="">Creating Responsive, Accessable Web Designs</h1>
+          </header>
+          <picture class="c-header">
+            <source srcset="images/background-mobile.jpg"  media="(max-width: 576px)">
+            <img class="c-header-image" src="images/background.jpg" alt="Open reatch arm">
+          </picture>
         </section>
       </div>
     </header>
