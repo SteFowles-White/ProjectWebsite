@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   font-size: 1.1875rem !important;
   line-height: 1.7812rem !important;
-  color: #616161; }
+  color: #545454; }
 
 ol, ul {
   list-style: none; }
@@ -43,7 +43,7 @@ table {
   border-spacing: 0; }
 
 a {
-  color: #616161; }
+  color: #545454; }
 
 h1 {
   font-size: 2.2rem;
@@ -125,12 +125,25 @@ h6 {
 
 .c-nav {
   z-index: 20;
-  margin-bottom: -4rem;
+  margin-bottom: -6rem;
   animation-name: fade-in;
-  animation-duration: 3s; }
+  animation-duration: 3s;
+  max-width: 1140px; }
 
 .c_nav__show {
   background-color: inherit; }
+
+.navbar-nav a {
+  font-size: 1.5rem;
+  transition: font-size .5s; }
+
+@media only screen and (max-width: 1200px) {
+  .c-nav {
+    max-width: 100%; } }
+
+@media only screen and (max-width: 768px) {
+  .navbar-nav a {
+    font-size: 1.125rem; } }
 
 @media only screen and (max-width: 576px) {
   .c-nav__mobile {
@@ -141,7 +154,9 @@ h6 {
   .c_nav__show {
     background-color: #fefdfe; }
   .navbar-nav {
-    background-color: #fefdfe; } }
+    background-color: #fefdfe; }
+  .navbar-nav a {
+    font-size: 1.125rem; } }
 
 @keyframes fade-in-opacity {
   from {

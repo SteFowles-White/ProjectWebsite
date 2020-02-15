@@ -1,13 +1,27 @@
 .c-nav {
     z-index: 20;
-    margin-bottom: -4rem;
+    margin-bottom: -6rem;
     animation-name: fade-in;
     animation-duration: 3s;
+    max-width: 1140px;
 }
 .c_nav__show{
     background-color: inherit;
 }
-
+.navbar-nav a{
+    font-size: 	1.5rem;
+    transition: font-size .5s;
+}
+@media only screen and (max-width: 1200px) {
+    .c-nav {
+        max-width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+    .navbar-nav a{
+        font-size: 	1.125rem;
+    }
+  }
 @media only screen and (max-width: 576px) {
     .c-nav__mobile {
         position: absolute;
@@ -20,5 +34,8 @@
     }
     .navbar-nav {
         background-color: $off-white;
+    }
+    .navbar-nav a{
+        font-size: 	1.125rem;
     }
   }
