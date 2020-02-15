@@ -1,6 +1,24 @@
 .c-nav {
     z-index: 20;
-    position: absolute;
+    margin-bottom: -4rem;
     animation-name: fade-in;
     animation-duration: 3s;
 }
+.c_nav__show{
+    background-color: inherit;
+}
+
+@media only screen and (max-width: 576px) {
+    .c-nav__mobile {
+        position: absolute;
+        top: 55px;
+        width: 100%;
+        left: 0px;
+    }
+    .c_nav__show{
+        background-color: $off-white;
+    }
+    .navbar-nav {
+        background-color: $off-white;
+    }
+  }

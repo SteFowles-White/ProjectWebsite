@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	font-size: 	1.1875rem !important;
 	line-height:  1.7812rem !important;
+	color: $dark-grey;
 }
 ol, ul {
 	list-style: none;
@@ -41,6 +42,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a{
+	color: $dark-grey;
+}
+
 
 h1 {
     font-size: 2.2rem;

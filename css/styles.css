@@ -24,7 +24,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   font-size: 1.1875rem !important;
-  line-height: 1.7812rem !important; }
+  line-height: 1.7812rem !important;
+  color: #616161; }
 
 ol, ul {
   list-style: none; }
@@ -40,6 +41,9 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+a {
+  color: #616161; }
 
 h1 {
   font-size: 2.2rem;
@@ -94,7 +98,7 @@ h6 {
   width: 100%;
   opacity: .7;
   height: auto;
-  animation-name: fade-in;
+  animation-name: fade-in-opacity;
   animation-duration: 3s; }
 
 @media only screen and (max-width: 1200px) {
@@ -121,9 +125,29 @@ h6 {
 
 .c-nav {
   z-index: 20;
-  position: absolute;
+  margin-bottom: -4rem;
   animation-name: fade-in;
   animation-duration: 3s; }
+
+.c_nav__show {
+  background-color: inherit; }
+
+@media only screen and (max-width: 576px) {
+  .c-nav__mobile {
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    left: 0px; }
+  .c_nav__show {
+    background-color: #fefdfe; }
+  .navbar-nav {
+    background-color: #fefdfe; } }
+
+@keyframes fade-in-opacity {
+  from {
+    opacity: 0; }
+  to {
+    opacity: .7; } }
 
 @keyframes fade-in {
   from {
