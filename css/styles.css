@@ -23,8 +23,8 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  font-size: 1.1875rem !important;
-  line-height: 1.7812rem !important;
+  font-size: 1.25rem !important;
+  line-height: 2.15rem !important;
   color: #545454; }
 
 ol, ul {
@@ -68,6 +68,13 @@ h5 {
 h6 {
   font-size: .875rem;
   line-height: 1.3125rem; }
+
+.c-slide-up {
+  transform: translateY(150px);
+  opacity: 0; }
+
+.c-slide-up-animation {
+  animation: slide-up 1s ease forwards; }
 
 @media only screen and (max-width: 768px) {
   .card-deck {
@@ -157,6 +164,14 @@ h6 {
     background-color: #fefdfe; }
   .navbar-nav a {
     font-size: 1.125rem; } }
+
+@keyframes slide-up {
+  from {
+    transform: translateY(150px);
+    opacity: 0; }
+  to {
+    transform: translateY(0px);
+    opacity: 1; } }
 
 @keyframes fade-in-opacity {
   from {

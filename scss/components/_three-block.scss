@@ -1,3 +1,12 @@
+
+.c-slide-up { 
+    transform: translateY(150px);
+    opacity: 0;
+}
+.c-slide-up-animation {
+    animation: slide-up 1s ease forwards;
+}
+
 @media only screen and (max-width: 768px) {
     .card-deck {
         display: block !important;
